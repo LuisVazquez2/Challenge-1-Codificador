@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Encriptador de Textos</title>
+</head>
+
+<body>
+    <div
+        class="p-3 max-w-sm font-sans text-4xl text- mx-auto rounded-md shadow-lg text-center bg-orange-400 m-2 font-bold">
+        Encriptador
+        de Textos</div>
+    <form>
+        <div class="flex-1">
+            <div class="flex justify-center">
+                <textarea
+                    class="content-center border-cyan-900 border-2 w-96 h-40 font-sans italic p-2 rounded-md mx-12"
+                    name="text" id="text" placeholder="Ingrese el texto aquí..."></textarea>
+            </div>
+            </br>
+            <div class="flex justify-center">
+                <button class="bg-green-400 rounded-md py-2 px-4 m-1 transition-shadow hover:shadow-xl"
+                    type="button" onclick="f_encrypt()">Encriptar</button>
+                <button class="bg-red-400 rounded-md py-2 px-4 m-1 transition-shadow hover:shadow-xl"
+                    type="button" onclick="f_decrypt()">Desencriptar</button>
+                <button class="bg-blue-400 rounded-md py-2 px-4 m-1 transition-shadow hover:shadow-xl"
+                    type="button" onclick="copy_to_clipboard()">Copiar</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
