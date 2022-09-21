@@ -69,7 +69,3 @@ copy_to_clipboard = (text) => {
     navigator.clipboard.writeText(text);
     alert('Copied to clipboard');
 }
-
-console.log(encrypt_text('hola'));
-console.log(decrypt_text('hoberlai'));
-console.log(decrypt_text('gaitober'));

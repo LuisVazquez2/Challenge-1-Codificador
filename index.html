@@ -13,23 +13,23 @@
 
 <body>
     <div
-        class="p-3 max-w-sm font-sans text-4xl text- mx-auto rounded-md shadow-lg text-center bg-orange-400 m-2 font-bold">
+        class="p-3 max-w-sm font-sans text-4xl mx-auto rounded-full text-center bg-orange-400 m-2 font-bold sm:max-w-md">
         Encriptador
         de Textos</div>
     <form>
         <div class="flex-1">
             <div class="flex justify-center">
                 <textarea
-                    class="content-center border-cyan-900 border-2 w-96 h-40 font-sans italic p-2 rounded-md mx-12"
+                    class="content-center border-cyan-900 border-2 w-96 h-40 font-sans italic p-2 rounded-md"
                     name="text" id="text" placeholder="Ingrese el texto aquí..."></textarea>
             </div>
             </br>
             <div class="flex justify-center">
-                <button class="bg-green-400 rounded-md py-2 px-4 m-1 transition-shadow hover:shadow-xl"
+                <button class="bg-green-400 rounded-md py-2 px-4 m-1 hover:shadow-2xl hover:border-green-500 hover:border-2 hover:bg-white hover:py-0 hover:m-0.5"
                     type="button" onclick="f_encrypt()">Encriptar</button>
-                <button class="bg-red-400 rounded-md py-2 px-4 m-1 transition-shadow hover:shadow-xl"
+                <button class="bg-red-400 rounded-md py-2 px-4 m-1 hover:shadow-2xl hover:border-red-500 hover:border-2 hover:bg-white hover:py-0 hover:m-0.5" 
                     type="button" onclick="f_decrypt()">Desencriptar</button>
-                <button class="bg-blue-400 rounded-md py-2 px-4 m-1 transition-shadow hover:shadow-xl"
+                <button class="bg-blue-400 rounded-md py-2 px-4 m-1 hover:shadow-xl hover:border-blue-500 hover:border-2 hover:bg-white hover:py-0 hover:m-0.5"
                     type="button" onclick="copy_to_clipboard()">Copiar</button>
             </div>
         </div>
